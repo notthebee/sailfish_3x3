@@ -1,0 +1,20 @@
+--- original/usr/share/lipstick-jolla-home-qt5/switcher/Switcher.qml       2018-03-09 12:58:25.742254172 +0100
++++ patched/usr/share/lipstick-jolla-home-qt5/switcher/Switcher.qml        2018-03-09 12:57:05.642324203 +0100
+@@ -379,7 +379,7 @@
+             }
+
+             function doUpdateColumns() {
+-                var cols = switcherGrid.largeColumns
++                var cols = switcherGrid.smallColumns
+                 if (switcherGrid.allowSmallCovers && switcherModel.itemCount > switcherGrid.largeItemCount)
+                     cols = switcherGrid.smallColumns
+                 if (cols !== switcherGrid.columns) {
+@@ -404,7 +404,7 @@
+                 NumberAnimation { target: switcherItems; property: "opacity"; to: 0.0; duration: 200 }
+                 ScriptAction {
+                     script: {
+-                        var cols = switcherGrid.largeColumns
++                        var cols = switcherGrid.smallColumns
+                         if (switcherGrid.allowSmallCovers && switcherModel.itemCount > switcherGrid.largeItemCount)
+                             cols = switcherGrid.smallColumns
+                         switcherGrid.columns = cols

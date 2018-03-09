@@ -1,0 +1,9 @@
+
+{
+    "name": "Force 3x3 multitasking grid",
+    "description": "A homescreen patch for Sailfish 2.x that forces the 3x3 view of the multitask grid",
+    "category": "homescreen",
+    "infos": {
+        "maintainer": "notthebee"
+    }
+}
